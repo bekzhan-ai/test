@@ -1,4 +1,4 @@
-package Main2;
+package Main;
 
 import java.util.Arrays;
 
@@ -19,7 +19,7 @@ public class Guitar {
         this.color = color;
     }
 
-    String color;
+    private String color;
 
     public int getStringCount() {
         return stringCount;
@@ -29,13 +29,13 @@ public class Guitar {
         this.stringCount = stringCount;
     }
 
-    int stringCount = 6;
+    private int stringCount = 6;
 
     public int[] getTensions() {
         return tensions;
     }
 
-    int[] tensions = new int[stringCount];
+    private int[] tensions = new int[stringCount];
 
     public void tune(){
         Arrays.fill(tensions, 5);
